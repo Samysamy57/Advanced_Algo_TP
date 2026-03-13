@@ -1,0 +1,28 @@
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class StoryNode {
+        // Create a StoryNode structure containing
+        private int Story_id;
+        private int user_id;
+        private String content_preview;
+        private int timestamp;
+        private int views;
+        private boolean next;
+        private boolean prev;
+        //  Implement a DoublyLinkedList with
+        LinkedList<String> storylist;
+
+        // head: pointer to first node
+        public void Head (String head){
+            storylist.add(head);
+        }
+        // tail: pointer to last node
+        public void Tail (String tail){
+            storylist.add(tail);
+        }
+        // current: pointer to currently viewed story
+        public void Current (String current){
+            storylist.add(current);
+        }
+    }
